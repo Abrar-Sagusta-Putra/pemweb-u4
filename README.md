@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<!-- <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
@@ -56,4 +56,177 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT). -->
+
+
+# Portal Berita
+
+Aplikasi Portal Berita berbasis Laravel yang menyediakan platform untuk membaca, membuat, mengelola, dan mempublikasikan artikel secara digital.
+
+## Identitas Proyek
+
+| Informasi | Keterangan |
+|---|---|
+| Nama Proyek | Portal Berita |
+| Mata Kuliah | Pemrograman Web |
+| Framework | Laravel |
+| Bahasa Pemrograman | PHP |
+| Database | MySQL |
+| Frontend | HTML, CSS, JavaScript |
+| Repository | [pemweb-u4](https://github.com/Abrar-Sagusta-Putra/pemweb-u4) |
+
+## Fitur Aplikasi
+
+- **Halaman Beranda:** Menampilkan artikel terbaru.
+- **Autentikasi Pengguna:** Registrasi, login, dan logout.
+- **Dashboard:** Menampilkan statistik dan aktivitas artikel pengguna.
+- **Manajemen Artikel:** Membuat, melihat, mengubah, dan menghapus artikel.
+- **Hak Akses Pengguna:** Pengelolaan artikel dibatasi berdasarkan kepemilikan artikel.
+- **Desain Responsif:** Tampilan disesuaikan untuk berbagai ukuran layar.
+
+## Teknologi yang Digunakan
+
+- Laravel
+- PHP
+- MySQL
+- HTML5
+- CSS3
+- JavaScript
+- Vite
+- Node.js dan NPM
+
+## Persyaratan Sistem
+
+Pastikan perangkat telah memiliki:
+
+- PHP dan Composer
+- MySQL
+- Node.js dan NPM
+- Git
+
+## Instalasi dan Menjalankan Aplikasi
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/Abrar-Sagusta-Putra/pemweb-u4.git
+```
+
+### 2. Masuk ke Direktori Proyek
+
+```bash
+cd pemweb-u4
+```
+
+### 3. Instal Dependensi PHP
+
+```bash
+composer install
+```
+
+### 4. Instal Dependensi Frontend
+
+```bash
+npm install
+```
+
+### 5. Konfigurasi Environment
+
+Salin file `.env.example` menjadi `.env`.
+
+Pada Windows PowerShell:
+
+```powershell
+Copy-Item .env.example .env
+```
+
+### 6. Generate Application Key
+
+```bash
+php artisan key:generate
+```
+
+### 7. Konfigurasi Database
+
+Buat database MySQL, kemudian sesuaikan konfigurasi berikut pada file `.env`:
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=nama_database
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+Sesuaikan nama database, username, dan password dengan konfigurasi MySQL pada perangkat masing-masing.
+
+### 8. Jalankan Migrasi Database
+
+```bash
+php artisan migrate
+```
+
+### 9. Build Aset Frontend
+
+```bash
+npm run build
+```
+
+### 10. Jalankan Aplikasi
+
+```bash
+php artisan serve
+```
+
+Buka aplikasi melalui browser:
+
+```text
+http://127.0.0.1:8000
+```
+
+## Struktur Direktori
+
+```text
+pemweb-u4/
+├── app/
+│   ├── Http/
+│   │   └── Controllers/
+│   └── Models/
+├── bootstrap/
+├── config/
+├── database/
+│   ├── migrations/
+│   ├── factories/
+│   └── seeders/
+├── public/
+├── resources/
+│   ├── css/
+│   ├── js/
+│   └── views/
+│       ├── articles/
+│       ├── auth/
+│       ├── layouts/
+│       ├── pages/
+│       └── partials/
+├── routes/
+├── storage/
+├── tests/
+├── composer.json
+├── package.json
+└── vite.config.js
+```
+
+## Keamanan
+
+File `.env` berisi konfigurasi sensitif aplikasi dan tidak disertakan dalam repository. Folder `vendor/` dan `node_modules/` juga tidak diunggah karena dapat dibuat kembali melalui proses instalasi dependensi.
+
+## Repository
+
+Source code proyek tersedia secara publik melalui GitHub:
+
+[https://github.com/Abrar-Sagusta-Putra/pemweb-u4](https://github.com/Abrar-Sagusta-Putra/pemweb-u4)
+
+---
+
+**Portal Berita — Proyek Pemrograman Web**
